@@ -157,7 +157,7 @@ input[type="text"]
     border-radius: 4px;
     display: inline-block;
     width: 100%;
-    min-height: 50px;
+    min-height: 100px;
     padding: 1px 14px;
     margin: 8px 0;
     margin-top: 20px;
@@ -167,7 +167,7 @@ input[type="text"]
 }
 input[type="text"]:focus
 {
-    background-color: #f7f7fc;
+    background-color: #f1f1ff;
 }
 
 input[type="large_text"]
@@ -181,11 +181,58 @@ input[type="large_text"]
     overflow-y: scroll;
 }
 
-input[type="submit"]
-{
-    margin-top:2.5em;
+
+input[type=submit] {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top:2em;
     margin-bottom:2em;
+    width: 100px;
+    background-color: #ffffff;
+    color: MidnightBlue;
+    padding: 8px 12px;
+    margin: 8px 620px;
+    border: 2px;
+    border-style: solid;
+    border-color: MidnightBlue
+    border-radius: 2px;
+    color:blue; background:white;
+    -o-transition:color .2s ease-out, background .2s ease-in;
+    -ms-transition:color .2s ease-out, background .2s ease-in;
+    -moz-transition:color .2s ease-out, background .2s ease-in;
+    -webkit-transition:color .2s ease-out, background .2s ease-in;
+    transition:color .2s ease-out, background .2s ease-in;
 }
+
+input[type=submit]:hover {
+
+    border-color: MidnightBlue;
+    color: white;
+    background-color: MidnightBlue;
+
+}
+
+textarea 
+{
+    border-radius: 4px;
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    padding: 10px 14px;
+    margin: 8px 0;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    font-size: 18px;
+    resize: none;
+}
+
+textarea:focus
+{
+    background-color: #f1f1ff;
+}
+
 
 div.form_element {padding-top:1em;}
 
