@@ -154,13 +154,20 @@ input[type="radio"] {vertical-align:middle; margin-top:-3px;}
 input[type="checkbox"] {vertical-align:middle; margin-top:-2px;}
 input[type="text"] 
 {
+    border-radius: 4px;
+    display: inline-block;
     width: 100%;
-    padding: 10px 14px;
+    min-height: 50px;
+    padding: 1px 14px;
     margin: 8px 0;
-    margin-top: 1px;
+    margin-top: 20px;
     border: 1px solid #ccc;
     box-sizing: border-box;
     overflow-y: scroll;
+}
+input[type="text"]:focus
+{
+    background-color: #f7f7fc;
 }
 
 input[type="large_text"]
