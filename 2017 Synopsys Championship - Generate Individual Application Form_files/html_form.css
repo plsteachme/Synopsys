@@ -46,6 +46,24 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+
+/*tried out gradeint, doesnt work*/
+/*html {
+    height: 1000px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: blue;
+    background-repeat: none;
+    background: -webkit-linear-gradient( to bottom, blue, white);
+    background: -moz-linear-gradient( to bottom, blue, white);
+    background: -ms-linear-gradient( to bottom, blue, white);
+    background: -o-linear-gradient( to bottom, blue, white);
+    background: linear-gradient( to bottom, blue, white);
+}*/
+
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
     display: block;
@@ -149,6 +167,7 @@ span.duplicate-email-bad
     font-size:100%;
     padding-left:0.5em;
 }
+
 
 input[type="radio"] {vertical-align:middle; margin-top:-3px;}
 input[type="checkbox"] {vertical-align:middle; margin-top:-2px;}
