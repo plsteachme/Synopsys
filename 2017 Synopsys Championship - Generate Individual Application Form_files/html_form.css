@@ -196,12 +196,11 @@ input[type=submit] {
     border-style: solid;
     border-color: MidnightBlue
     border-radius: 2px;
-    color:blue; background:white;
-    -o-transition:color .2s ease-out, background .2s ease-in;
-    -ms-transition:color .2s ease-out, background .2s ease-in;
-    -moz-transition:color .2s ease-out, background .2s ease-in;
-    -webkit-transition:color .2s ease-out, background .2s ease-in;
-    transition:color .2s ease-out, background .2s ease-in;
+    -o-transition:color .1s ease-out, background .2s ease-in;
+    -ms-transition:color .1s ease-out, background .2s ease-in;
+    -moz-transition:color .1s ease-out, background .2s ease-in;
+    -webkit-transition:color .1s ease-out, background .2s ease-in;
+    transition:color .1s ease-out, background .2s ease-in;
 }
 
 input[type=submit]:hover {
