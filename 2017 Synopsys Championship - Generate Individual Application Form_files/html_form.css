@@ -203,7 +203,8 @@ input[type="large_text"]
 
 
 
-input[type=submit] {
+input[type=submit] 
+{
     font-weight: bold;
     font-size: 1.2em;
     margin-top:2em;
@@ -224,17 +225,61 @@ input[type=submit] {
     transition:color .1s ease-out, background .2s ease-in;
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover 
+{
     border-color: MidnightBlue;
     color: white;
     background-color: MidnightBlue;
 }
 
-input[type=submit]:focus {
+input[type=submit]:focus 
+{
     border-color: MidnightBlue;
     color: white;
     background-color: #00619b;
 }
+
+input.previous 
+{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top:2em;
+    margin-bottom:2em;
+    width: 140px;
+    background-color: #ffffff;
+    color: MidnightBlue;
+    padding: 8px 28px;
+    margin: 8px 460px;
+    border: 2px;
+    border-style: solid;
+    border-color: MidnightBlue
+    border-radius: 2px;
+    -o-transition:color .1s ease-out, background .2s ease-in;
+    -ms-transition:color .1s ease-out, background .2s ease-in;
+    -moz-transition:color .1s ease-out, background .2s ease-in;
+    -webkit-transition:color .1s ease-out, background .2s ease-in;
+    transition:color .1s ease-out, background .2s ease-in;
+}
+
+input.previous:hover 
+{
+    border-color: MidnightBlue;
+    color: white;
+    background-color: MidnightBlue;
+}
+
+input.previous:focus 
+{
+    border-color: MidnightBlue;
+    color: white;
+    background-color: #00619b;
+}
+
+.temp input{
+    clear:left;
+    float:left;
+}
+
 
 textarea 
 {
