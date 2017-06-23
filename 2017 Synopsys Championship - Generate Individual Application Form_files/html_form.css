@@ -275,11 +275,7 @@ input.previous:focus
     background-color: #00619b;
 }
 
-.temp input{
-    clear:left;
-    float:left;
-}
-
+form {display: inline-block;}
 
 textarea 
 {
@@ -302,7 +298,6 @@ textarea:focus
 {
     background-color: #f1f1ff;
 }
-
 
 div.form_element {padding-top:1em;}
 
