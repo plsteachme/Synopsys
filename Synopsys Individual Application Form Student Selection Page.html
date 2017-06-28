@@ -7,6 +7,25 @@
 	</title>
 	<link rel="stylesheet" type="text/css" href="./2017 Synopsys Championship - Generate Individual Application Form_files/html_form.css">
 
+	<script>
+
+		function check(){
+			if(document.getElementById('one')!=null && document.getElementById('one').checked) {
+				localStorage.num_students = 1;
+			}
+			else if(document.getElementById('two')!=null && document.getElementById('two').checked) {
+				localStorage.num_students = 2;
+			}
+			else if(document.getElementById('three')!=null && document.getElementById('three').checked) {
+				localStorage.num_students = 3;
+			}
+
+			console.log(localStorage.num_students);
+		}
+
+
+	</script>
+
 </head>
 
 <body>
@@ -21,24 +40,21 @@
 	<div class="title"> Number of Students <span class="asterisk">*</span></div>
 	<div class="subtitle">How many students will be working on this project? (not including student mentors)</div>
 	<ul>
-		<li style="padding-left:3em;text-indent:-3em"><label><input type="radio" name="student_number" value="1">
+		<li style="padding-left:3em;text-indent:-3em"><label><input onclick="check()" type="radio" name="student_number" id="one" value="1">
 		<span class="label" style="font-weight:bold">One student</span><span class="bad-grade-for-category"></span></label></li>
-		<li style="padding-left:3em;text-indent:-3em"><label><input type="radio" name="student_number" value="2">
+		<li style="padding-left:3em;text-indent:-3em"><label><input onclick="check()" type="radio" name="student_number" id="two" value="2">
 		<span class="label" style="font-weight:bold">Two Students</span> <span class="bad-grade-for-category"></span></label></li>
-		<li style="padding-left:3em;text-indent:-3em"><label><input type="radio" name="student_number" value="3">
+		<li style="padding-left:3em;text-indent:-3em"><label><input onclick="check()" type="radio" name="student_number" id="three" value="3">
 		<span class="label" style="font-weight:bold">Three Students</span> <span class="bad-grade-for-category"></span></label></li>
 	</ul>
 </div>
 
 
-
-
-
 <div>
-	<form action="Synopsys Individual Application Form Student Selection Page.html" method="get">
+	<form action="Synopsys Individual Application Form Intro Page.html" method="get">
 	<input class="previous" name="previous" type="submit" value="Previous"> 
 	</form>
-	<form action="Synopsys Individual Application Form Student Selection Page.html" method="get">
+	<form action="Synopsys Individual Application Project Type.html" method="get">
 	<input name="next" type="submit" value="Next">
 	</form>
 </div>
