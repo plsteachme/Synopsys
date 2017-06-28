@@ -12,15 +12,24 @@
 		function check(){
 			if(document.getElementById('one')!=null && document.getElementById('one').checked) {
 				localStorage.num_students = 1;
+				localStorage.student_form = "Synopsys Individual Application Form.html"
 			}
 			else if(document.getElementById('two')!=null && document.getElementById('two').checked) {
 				localStorage.num_students = 2;
+				localStorage.student_form = "Synopsys Two Team Application Form.html"
 			}
 			else if(document.getElementById('three')!=null && document.getElementById('three').checked) {
 				localStorage.num_students = 3;
+				localStorage.student_form = "Synopsys Three Team Application Form.html"
 			}
 
 			console.log(localStorage.num_students);
+		}
+
+		function nextPage(){
+
+			return "Synopsys Individual Application Project Type.html";
+
 		}
 
 
@@ -54,12 +63,10 @@
 	<form action="Synopsys Individual Application Form Intro Page.html" method="get">
 	<input class="previous" name="previous" type="submit" value="Previous"> 
 	</form>
-	<form action="Synopsys Individual Application Project Type.html" method="get">
-	<input name="next" type="submit" value="Next">
+	<form action=checkPage() method="get">
+	<input onclick="nextPage()" id="next" name="next" type="submit" value="Next">
 	</form>
 </div>
-
-
 
 
 
