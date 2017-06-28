@@ -32,7 +32,7 @@ del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
+fieldset, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
@@ -124,6 +124,17 @@ h2 {
     margin-bottom:0.5em;
     color:White;
     background-color:MidnightBlue;
+}
+
+h3 {
+
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:150%;
+    font-weight: bold;
+    font-weight:regular;
+    line-height: 100%;
+    color:MidnightBlue;
+
 }
 
 p {font-size:1em;}
@@ -275,7 +286,11 @@ input.previous:focus
     background-color: #00619b;
 }
 
-form {display: inline-block;}
+form 
+{
+    float: left;
+    display: inline-block;
+}
 
 textarea 
 {
