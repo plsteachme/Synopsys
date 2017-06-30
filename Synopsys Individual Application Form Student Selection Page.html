@@ -7,20 +7,29 @@
 	</title>
 	<link rel="stylesheet" type="text/css" href="./2017 Synopsys Championship - Generate Individual Application Form_files/html_form.css">
 
+
+	<?php
+
+		$URL = 
+
+
+	>
+
+
 	<script>
 
 		function check(){
 			if(document.getElementById('one')!=null && document.getElementById('one').checked) {
 				localStorage.num_students = 1;
-				localStorage.student_form = "Synopsys Individual Application Form.html"
+				localStorage.student_form = "Synopsys Individual Application Form.html";
 			}
 			else if(document.getElementById('two')!=null && document.getElementById('two').checked) {
 				localStorage.num_students = 2;
-				localStorage.student_form = "Synopsys Two Team Application Form.html"
+				localStorage.student_form = "Synopsys Two Team Application Form.html";
 			}
 			else if(document.getElementById('three')!=null && document.getElementById('three').checked) {
 				localStorage.num_students = 3;
-				localStorage.student_form = "Synopsys Three Team Application Form.html"
+				localStorage.student_form = "Synopsys Three Team Application Form.html";
 			}
 
 			console.log(localStorage.num_students);
@@ -28,6 +37,7 @@
 
 		function nextPage(){
 
+			console.log("received");
 			return "Synopsys Individual Application Project Type.html";
 
 		}
@@ -60,11 +70,11 @@
 
 
 <div>
-	<form action="Synopsys Individual Application Form Intro Page.html" method="get">
+	<form action="Synopsys Application Form Intro Page.html" method="get">
 	<input class="previous" name="previous" type="submit" value="Previous"> 
 	</form>
-	<form action=checkPage() method="get">
-	<input onclick="nextPage()" id="next" name="next" type="submit" value="Next">
+	<form onSubmit="nextPage()" method="get">
+	<input class="next" onclick="nextPage()" id="next" name="next" type="submit" value="Next">
 	</form>
 </div>
 

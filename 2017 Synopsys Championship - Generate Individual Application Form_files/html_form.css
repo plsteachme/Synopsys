@@ -92,6 +92,7 @@ body
 {
     background-color:White;       /* good */
     padding-left:1em;
+    padding-bottom:50px;
     width:45em;
     margin-left: auto;
     margin-right: auto;
@@ -165,6 +166,9 @@ padding-left:14px;
 label {vertical-align:middle;}
 span.label {padding-left:4px;}
 
+
+
+
 span.duplicate-email-good
 {
     color:DarkSlateGray;
@@ -180,7 +184,26 @@ span.duplicate-email-bad
 }
 
 
-input[type="radio"] {vertical-align:middle; margin-top:-3px;}
+input[type="email"]
+{
+    border-radius: 4px;
+    display: inline-block;
+    width: 100%;
+    min-height: 40px;
+    padding: 1px 14px;
+    margin: 6px 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+input[type="radio"] {
+    vertical-align:middle; 
+    margin-top:-3px;
+    margin: 6px 0;
+}
 input[type="checkbox"] {vertical-align:middle; margin-top:-2px;}
 input[type="text"] 
 {
@@ -189,9 +212,9 @@ input[type="text"]
     width: 100%;
     min-height: 40px;
     padding: 1px 14px;
-    margin: 8px 0;
+    margin: 6px 0;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     box-sizing: border-box;
     overflow-y: scroll;
@@ -286,6 +309,32 @@ input.previous:focus
     background-color: #00619b;
 }
 
+input.next 
+{
+    position:relative;
+    top:0%;
+    left:0%;
+    bottom:58px;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top:2em;
+    margin-bottom:2em;
+    width: 100px;
+    background-color: #ffffff;
+    color: MidnightBlue;
+    padding: 8px 12px;
+    margin: 8px 620px;
+    border: 2px;
+    border-style: solid;
+    border-color: MidnightBlue
+    border-radius: 2px;
+    -o-transition:color .1s ease-out, background .2s ease-in;
+    -ms-transition:color .1s ease-out, background .2s ease-in;
+    -moz-transition:color .1s ease-out, background .2s ease-in;
+    -webkit-transition:color .1s ease-out, background .2s ease-in;
+    transition:color .1s ease-out, background .2s ease-in;
+}
+
 form 
 {
     float: left;
@@ -320,6 +369,7 @@ div.title
 {
     color:MidnightBlue;
     font-weight:bold;
+    padding:3px 0px;
 }
 
 div.errorbox-bad
