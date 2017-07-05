@@ -8,32 +8,28 @@
 	<link rel="stylesheet" type="text/css" href="./2017 Synopsys Championship - Generate Individual Application Form_files/html_form.css">
 
 
-	<?php
-
-		$URL = 
-
-
-	>
-
-
 	<script>
 
 		function check(){
 
 			if(document.getElementById('one')!=null && document.getElementById('one').checked) {
-				createCookie("numStudents",1,30);
+				createCookie("numStudents",1,1);
 				console.log("set 1");
 			}
 			else if(document.getElementById('two')!=null && document.getElementById('two').checked) {
-				createCookie("numStudents",2,30);
+				createCookie("numStudents",2,1);
 			}
 			else if(document.getElementById('three')!=null && document.getElementById('three').checked) {
-				createCookie("numStudents",3,30);
+				createCookie("numStudents",3,1);
+			}
+			else{
+				createCookie("numStudents",1,1);
 			}
 		}
 
 		function nextPage(){
 
+			check();
 			console.log("received");
 			var students=readCookie("numStudents");
 			if(students==1) {
@@ -47,7 +43,6 @@
 				document.location.href = "Synopsys Individual Application Form.html";
 			}
 			console.log(students);
-
 		}
 
 		function createCookie(name,value,days) {
