@@ -340,6 +340,47 @@ input.next
     transition:color .1s ease-out, background .2s ease-in;
 }
 
+button
+{
+    position:relative;
+    top:0%;
+    left:0%;
+    bottom:58px;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top:2em;
+    margin-bottom:2em;
+    width: 100px;
+    background-color: #ffffff;
+    color: MidnightBlue;
+    padding: 8px 12px;
+    margin: 8px 620px;
+    border: 2px;
+    border-style: solid;
+    border-color: MidnightBlue
+    border-radius: 2px;
+    -o-transition:color .1s ease-out, background .2s ease-in;
+    -ms-transition:color .1s ease-out, background .2s ease-in;
+    -moz-transition:color .1s ease-out, background .2s ease-in;
+    -webkit-transition:color .1s ease-out, background .2s ease-in;
+    transition:color .1s ease-out, background .2s ease-in;
+}
+
+button:hover
+{
+    border-color: MidnightBlue;
+    color: white;
+    background-color: MidnightBlue;
+}
+
+button:focus
+{
+    border-color: MidnightBlue;
+    color: white;
+    background-color: #00619b;
+}
+
+
 form 
 {
     float: left;
