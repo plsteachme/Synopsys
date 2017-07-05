@@ -199,6 +199,11 @@ input[type="email"]
     overflow-y: scroll;
 }
 
+input[type="email"]:focus
+{
+    background-color: #f1f1ff;
+}
+
 input[type="radio"] {
     vertical-align:middle; 
     margin-top:-3px;
